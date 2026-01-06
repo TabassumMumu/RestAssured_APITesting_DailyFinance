@@ -30,7 +30,7 @@ public class RegistrationTestRunner extends Setup {
         UserModel userModel = new UserModel();
         userModel.setFirstName(faker.name().firstName());
         userModel.setLastName(faker.name().lastName());
-        userModel.setEmail("TestUser +"+ Utils.randomNumber(100,10) +"@gmail.com");
+        userModel.setEmail("TestUser+"+ Utils.randomNumber(100,10) +"@gmail.com");
         userModel.setPassword("12345");
         userModel.setPhoneNumber("012"+ Utils.randomNumber(9999999,1000000));
         String address = faker.country().capital();

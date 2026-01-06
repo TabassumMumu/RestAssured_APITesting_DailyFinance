@@ -33,8 +33,9 @@ public class UserTestRunner extends Setup {
     public void doUserLogin() throws ConfigurationException {
 
         UserModel userModel = new UserModel();
-        userModel.setEmail(prop.getProperty("email"));
-        userModel.setPassword("12345");
+        userModel.setEmail("mumutabassum74@gmail.com");
+        //userModel.setEmail(prop.getProperty("email"));
+        userModel.setPassword("123456");
         Response res = userController.doLogin(userModel);
 
         Assert.assertEquals(res.getStatusCode(),200 );

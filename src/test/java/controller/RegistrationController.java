@@ -16,7 +16,7 @@ public class RegistrationController {
     }
 
     public Response doRegistration(UserModel userModel){
-        Response res = (Response) given().contentType("application/json")
+        Response res = given().contentType("application/json")
                 .body(userModel).when().post("/api/auth/register");
         return res;
     }
